@@ -1,0 +1,152 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00539C;
+  padding: 0.8rem 1.5rem;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #003f73;
+  border-radius: 4px;
+}
+
+.nav-links a.active {
+  background: #ff9800;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #00539C, #007bbf);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards on home */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Table */
+.table-container {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+table th {
+  background: #00539C;
+  color: white;
+}
+
+.tip {
+  margin: 1.5rem;
+  font-style: italic;
+  color: #007bbf;
+}
+
+/* Footer */
+footer {
+  background: #00539C;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Timetable Styling */
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 0.95rem;
+}
+
+.timetable th, .timetable td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.timetable th {
+  background: #00539C;
+  color: white;
+  font-weight: bold;
+}
+
+.timetable td {
+  background: #fafafa;
+}
+
+.timetable tr:nth-child(even) td {
+  background: #f1f6fb;
+}
+
+.timetable td:empty {
+  background: #fdfdfd;
+}
